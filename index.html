@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora sexagecimal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <!-- Formulario para la calculadora sexagecimal -->
+        <h1>Calculadora sexagecimal</h1>
+        <form id="task-form">
+            <table>
+                <tr>
+                    <th>Número 1</th>
+                    <th></th>
+                    <th>Número 2</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="deg1"  /> º
+                        <input type="number" id="min1" /> '
+                        <input type="number" id="sec1" /> ''
+                    </td>
+                    <td>
+                        <select id="operation">
+                            <option value="add">+</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="deg2"  /> º
+                        <input type="number" id="min2"  /> '
+                        <input type="number" id="sec2" /> ''
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="calculate-button">Calcular</button>
+        </form>
+
+        <!-- Resultado -->
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
